@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Test" thread-count="5">
+        <parameter name="os" value="Linux"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.tc01_accountRegistrationTest"/>
+            <class name="testCases.tc02_loginAccountTest"/>
+        </classes>
+    </test>
+    <test name="Test2" thread-count="5">
+        <parameter name="os" value="Linux"/>
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="testCases.tc01_accountRegistrationTest"/>
+            <class name="testCases.tc02_loginAccountTest"/>
+        </classes>
+    </test>
+</suite>
